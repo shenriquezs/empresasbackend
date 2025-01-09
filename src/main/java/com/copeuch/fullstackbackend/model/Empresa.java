@@ -8,11 +8,13 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-/* Created by Arjun Gautam */
+import java.io.Serializable;
+
+
 @Entity
 @Data
 @Table(name = "empresa")
-public class Empresa {
+public class Empresa implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -22,6 +24,10 @@ public class Empresa {
     private String fechaInsercion;
 
 
+    public Empresa() {
+
+    }
+
     public Empresa(Long id, String rut, String razonSocial, String fechaInsercion) {
         this.id = id;
         this.rut = rut;
@@ -29,9 +35,6 @@ public class Empresa {
         this.fechaInsercion = fechaInsercion;
     }
 
-    public Empresa() {
-
-    }
 
     public Long getId() {
         return id;
