@@ -1,4 +1,4 @@
-package com.copeuch.fullstackbackend.exception;
+package com.empresas.fullstackbackend.exception;
 
 
 public class EmpresaNotFoundException extends RuntimeException{

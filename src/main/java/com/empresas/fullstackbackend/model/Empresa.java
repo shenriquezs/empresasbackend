@@ -1,4 +1,4 @@
-package com.copeuch.fullstackbackend.model;
+package com.empresas.fullstackbackend.model;
 
 import lombok.Data;
 

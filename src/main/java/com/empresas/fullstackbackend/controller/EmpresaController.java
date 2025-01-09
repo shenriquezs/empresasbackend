@@ -1,9 +1,9 @@
-package com.copeuch.fullstackbackend.controller;
+package com.empresas.fullstackbackend.controller;
 
-import com.copeuch.fullstackbackend.exception.EmpresaNotFoundException;
+import com.empresas.fullstackbackend.exception.EmpresaNotFoundException;
 
-import com.copeuch.fullstackbackend.model.Empresa;
-import com.copeuch.fullstackbackend.repository.EmpresaRepository;
+import com.empresas.fullstackbackend.model.Empresa;
+import com.empresas.fullstackbackend.repository.EmpresaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

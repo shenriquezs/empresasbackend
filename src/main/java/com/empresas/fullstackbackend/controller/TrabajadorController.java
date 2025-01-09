@@ -1,9 +1,9 @@
-package com.copeuch.fullstackbackend.controller;
+package com.empresas.fullstackbackend.controller;
 
 
-import com.copeuch.fullstackbackend.exception.TrabajadorNotFoundException;
-import com.copeuch.fullstackbackend.repository.TrabajadorRepository;
-import com.copeuch.fullstackbackend.model.Trabajador;
+import com.empresas.fullstackbackend.exception.TrabajadorNotFoundException;
+import com.empresas.fullstackbackend.repository.TrabajadorRepository;
+import com.empresas.fullstackbackend.model.Trabajador;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -43,7 +43,7 @@ public class TrabajadorController {
                     trabajador.setApellidoPaterno(newTrabajador.getApellidoPaterno());
                     trabajador.setApellidoMaterno(newTrabajador.getApellidoMaterno());
                     trabajador.setDireccion(newTrabajador.getDireccion());
-                   // trabajador.setEmpresa(newTrabajador.getEmpresa());
+                    trabajador.setEmpresa(newTrabajador.getEmpresa());
                     return trabajadorRepository.save(trabajador);
                 }).orElseThrow(() -> new TrabajadorNotFoundException(id));
     }

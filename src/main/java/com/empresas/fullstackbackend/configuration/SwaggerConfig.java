@@ -1,4 +1,4 @@
-package com.copeuch.fullstackbackend.configuration;
+package com.empresas.fullstackbackend.configuration;
 
 
 
